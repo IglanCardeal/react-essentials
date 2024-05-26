@@ -1,46 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
-function App() {
-  const [count, setCount] = useState<number>(0)
-  const [date, setDate] = useState<Date>(new Date())
+// function genRandomInt(max: number) {
+//   return Math.floor(Math.random() * (max + 1));
+// }
 
-  setInterval(() => {
-    setDate(() => new Date())
-  }, 1_000)
+import ReactCoreConceptsImg from './assets/react-core-concepts.png'
 
+function Header() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React!!!!!!</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <button onClick={() => setCount(() => 0)}>
-          reset count
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-        <p>
-          Time is: {date.getHours()}:{date.getMinutes()}:{date.getSeconds()}
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <header>
+      <img src={ReactCoreConceptsImg} alt="Stylized atom" />
+      <h1>React Essentials</h1>
+      <p>
+        Fundamental React concepts you will need for almost any app you are going to build!
       </p>
-    </>
-  )
+    </header>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <div>
+      <Header />
+      <main>
+        <h2>Time to get started!</h2>
+      </main>
+    </div>
+  );
+}
+
+export default App;
