@@ -1,9 +1,9 @@
-import ReactCoreConceptsImg from '../assets/react-core-concepts.png'
+import reactCoreConceptsImg from '../assets/react-core-concepts.png'
 
 export function Header() {
   return (
     <header>
-      <img src={ReactCoreConceptsImg} alt='Stylized atom' />
+      <img src={reactCoreConceptsImg} alt='Stylized atom' />
       <h1>React Essentials</h1>
       <p>
         Fundamental React concepts you will need for almost any app you are
